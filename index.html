@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO Meta Tags -->
-    <title>Rizki — DWDM Engineer & Web3 Enthusiast | Jakarta</title>
+    <title>Rakharefano</title>
     <meta
       name="description"
       content="Portfolio of Rizki Giali, a Jakarta-based DWDM Engineer specializing in optical networking, fiber optic infrastructure, and Web3 technology. Available for freelance and collaboration."
@@ -44,7 +44,7 @@
     />
 
     <!-- Favicon -->
-    <link rel="icon" href="gojosatoru.png" type="image/png" />
+    <link rel="icon" href="fotoprofil.png" type="image/png" />
 
     <!-- Fonts: Clash Display (headings) + Satoshi (body) — tamalsen.dev inspired -->
     <link rel="preconnect" href="https://api.fontshare.com" />
@@ -328,10 +328,10 @@
         box-shadow: var(--gshadow);
         border-radius: var(--r24);
         transition:
-          background 0.3s ease,
-          border-color 0.3s ease,
-          box-shadow 0.35s ease,
-          transform 0.35s ease;
+          background 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+          border-color 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+          box-shadow 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+          transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
       }
       .glass-card:hover {
         background: var(--gb-strong);
@@ -756,7 +756,7 @@
         box-shadow:
           0 4px 20px var(--accent-glow),
           0 1px 0 rgba(255, 255, 255, 0.18) inset;
-        transition: all 0.3s ease;
+        transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
         letter-spacing: 0.01em;
       }
       .btn-primary:hover {
@@ -873,8 +873,8 @@
         opacity: 0;
         transform: translateY(28px);
         transition:
-          opacity 0.75s ease,
-          transform 0.75s ease;
+          opacity 0.85s cubic-bezier(0.34, 1.56, 0.64, 1),
+          transform 0.85s cubic-bezier(0.34, 1.56, 0.64, 1);
       }
       .reveal.visible {
         opacity: 1;
@@ -981,9 +981,9 @@
         border: 1px solid var(--cborder);
         box-shadow: var(--gshadow);
         transition:
-          transform 0.35s ease,
-          box-shadow 0.35s ease,
-          border-color 0.35s ease;
+          transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1),
+          box-shadow 0.45s cubic-bezier(0.34, 1.56, 0.64, 1),
+          border-color 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
       }
       .project-card:hover {
         transform: translateY(-4px);
@@ -1035,9 +1035,9 @@
       .video-wrapper video {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
         display: block;
-        transition: transform 0.45s ease;
+        transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
       }
       .project-card:hover .video-wrapper video {
         transform: scale(1.02);
@@ -1770,7 +1770,8 @@
   <body>
     <!-- ── Loading ── -->
     <div id="loading" role="status" aria-label="Loading portfolio">
-      <img src="gojosatoru.png" alt="" onerror="this.style.display = 'none'" />
+      <!-- Preloader image removed -->
+
       <p class="load-text">Loading</p>
     </div>
 
@@ -1833,7 +1834,15 @@
             <path d="M12 5v14M5 12l7 7 7-7" />
           </svg>
         </a>
-        <a href="#contact" class="btn-glass">Let's Connect</a>
+        <a href="#contact" class="btn-glass"
+          >Let's Connect
+          <img
+            src="link.svg"
+            alt="LinkedIn"
+            style="width: 16px; height: 16px; margin-left: 6px"
+            aria-hidden="true"
+            onerror="this.style.display = 'none'"
+        /></a>
       </div>
       <div class="hero-scroll" aria-hidden="true">
         <div class="scroll-line"></div>
@@ -1980,21 +1989,10 @@
                     this.closest('.video-wrapper').innerHTML =
                       '<div class=\'video-placeholder\'><svg width=\'40\' height=\'40\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\' viewBox=\'0 0 24 24\'><rect x=\'2\' y=\'3\' width=\'20\' height=\'14\' rx=\'2\'/><path d=\'M8 21h8M12 17v4\'/></svg>n8n Workflow Demo</div>'
                   "
+                  autoplay
                 ></video>
-                <div class="video-play-btn" onclick="toggleVideo(this)">
-                  <div class="play-icon">
-                    <svg
-                      width="18"
-                      height="18"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      style="color: var(--t1)"
-                    >
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                </div>
               </div>
+
               <div class="media-overlay" aria-hidden="true"></div>
             </div>
             <div class="project-info">
@@ -2051,21 +2049,10 @@
                     this.closest('.video-wrapper').innerHTML =
                       '<div class=\'video-placeholder\'><svg width=\'40\' height=\'40\' fill=\'none\' stroke=\'currentColor\' stroke-width=\'1.5\' viewBox=\'0 0 24 24\'><rect x=\'2\' y=\'3\' width=\'20\' height=\'14\' rx=\'2\'/><path d=\'M8 21h8M12 17v4\'/></svg>Studio Demo</div>'
                   "
+                  autoplay
                 ></video>
-                <div class="video-play-btn" onclick="toggleVideo(this)">
-                  <div class="play-icon">
-                    <svg
-                      width="18"
-                      height="18"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      style="color: var(--t1)"
-                    >
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                </div>
               </div>
+
               <div class="media-overlay" aria-hidden="true"></div>
             </div>
             <div class="project-info">
@@ -2127,7 +2114,7 @@
                 <div>
                   <h3>Contact<br />Information</h3>
                   <p class="contact-tagline">
-                    Feel free to reach out directly —<br />I typically respond
+                    Feel free to reach out directly <br />I typically respond
                     within 24 hours.
                   </p>
                 </div>
@@ -2157,50 +2144,9 @@
                 </div>
 
                 <div>
-                  <div class="cinfo-label" style="margin-bottom: 12px">
-                    Find me on
-                  </div>
-                  <div class="contact-socials">
-                    <a
-                      href="https://github.com/Gawerxyz"
-                      target="_blank"
-                      rel="noopener"
-                      class="contact-social-chip"
-                    >
-                      <img
-                        src="https://cdn.simpleicons.org/github/white"
-                        alt=""
-                        aria-hidden="true"
-                      />
-                      GitHub
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/in/rizki-giali-rakharefano-867548211/"
-                      target="_blank"
-                      rel="noopener"
-                      class="contact-social-chip"
-                    >
-                      <img
-                        src="https://cdn.simpleicons.org/linkedin/white"
-                        alt=""
-                        aria-hidden="true"
-                      />
-                      LinkedIn
-                    </a>
-                    <a
-                      href="https://x.com/Gawerxyz"
-                      target="_blank"
-                      rel="noopener"
-                      class="contact-social-chip"
-                    >
-                      <img
-                        src="https://cdn.simpleicons.org/x/white"
-                        alt=""
-                        aria-hidden="true"
-                      />
-                      X / Twitter
-                    </a>
-                  </div>
+                  <!-- Find me on removed -->
+
+                  <!-- Social logos removed -->
                 </div>
               </div>
 
@@ -2403,7 +2349,8 @@
                     src="https://cdn.simpleicons.org/github/white"
                     alt=""
                     aria-hidden="true"
-                  />GitHub
+                  />
+                  GitHub
                 </a>
                 <a
                   href="https://www.linkedin.com/in/rizki-giali-rakharefano-867548211/"
@@ -2415,7 +2362,8 @@
                     src="https://cdn.simpleicons.org/linkedin/white"
                     alt=""
                     aria-hidden="true"
-                  />LinkedIn
+                  />
+                  LinkedIn
                 </a>
                 <a
                   href="https://x.com/Gawerxyz"
@@ -2427,7 +2375,8 @@
                     src="https://cdn.simpleicons.org/x/white"
                     alt=""
                     aria-hidden="true"
-                  />X/Twitter
+                  />
+                  X / Twitter
                 </a>
               </div>
             </div>
@@ -2618,6 +2567,15 @@
       if (modalForm && modalSubmit) {
         const origModalInner = modalSubmit.innerHTML;
         modalForm.addEventListener("submit", (e) => {
+          if (
+            !modalForm.name.value.trim() ||
+            !modalForm.email.value.trim() ||
+            !modalForm.message.value.trim()
+          ) {
+            e.preventDefault();
+            alert("Please fill all fields before sending.");
+            return;
+          }
           e.preventDefault();
           modalSubmit.disabled = true;
           modalSubmit.innerHTML = "Sending…";
@@ -2627,6 +2585,7 @@
               email: modalForm.email.value,
               message: modalForm.message.value,
             })
+
             .then(() => {
               modalSubmit.innerHTML = "✓ Sent!";
               modalForm.reset();
@@ -2770,6 +2729,15 @@
         const btn = document.getElementById("submit-btn");
         const origInner = btn.innerHTML;
         form.addEventListener("submit", function (e) {
+          if (
+            !form.name.value.trim() ||
+            !form.email.value.trim() ||
+            !form.message.value.trim()
+          ) {
+            e.preventDefault();
+            alert("Please fill all fields before sending.");
+            return;
+          }
           e.preventDefault();
           btn.disabled = true;
           btn.textContent = "Sending…";
@@ -2779,6 +2747,7 @@
               email: form.email.value,
               message: form.message.value,
             })
+
             .then(() => {
               btn.textContent = "✓ Message Sent!";
               form.reset();
