@@ -1816,7 +1816,7 @@
           font-size: 18px;
         }
         .modal-panel-inner .contact-info-col {
-          padding: var(--s24) var(--s20) var(--s20);
+          padding: var(--s24) var(--s20) var(--s28);
           gap: var(--s20);
           min-height: 0;
         }
@@ -1824,19 +1824,19 @@
           margin-top: 6px;
         }
         .modal-panel-inner .contact-form-col {
-          padding: var(--s20) var(--s20) var(--s28);
-          gap: var(--s16);
+          padding: var(--s32) var(--s20) var(--s32);
+          gap: var(--s20);
           min-height: 0;
         }
         .modal-panel-inner .contact-form-col form {
           display: flex;
           flex-direction: column;
-          gap: 24px;
+          gap: 16px;
         }
 
         .modal-panel-inner .contact-form-col {
-          padding: var(--s20) var(--s20) var(--s28);
-          gap: var(--s16);
+          padding: var(--s32) var(--s20) var(--s32);
+          gap: var(--s20);
         }
         /* Compact cinfo on mobile */
         .cinfo-icon {
@@ -1854,14 +1854,23 @@
         /* Stack name/email on mobile too */
         .frow {
           grid-template-columns: 1fr;
-          gap: var(--s12);
+          gap: var(--s16);
+        }
+        .fgroup {
+          gap: 8px;
+        }
+        .flabel {
+          font-size: 10px;
+          letter-spacing: 2px;
         }
         .finput,
         .ftextarea {
           font-size: 16px; /* prevents iOS zoom */
+          border-radius: 14px;
+          padding: 14px 16px;
         }
         .ftextarea {
-          height: 100px;
+          height: 110px;
         }
         .fsend {
           width: 100%;
