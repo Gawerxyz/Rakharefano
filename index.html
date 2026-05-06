@@ -1816,12 +1816,39 @@
           font-size: 18px;
         }
         .modal-panel-inner .contact-info-col {
-          padding: var(--s24) var(--s20) var(--s28);
+          padding: var(--s28) var(--s24) var(--s28);
           gap: var(--s20);
           min-height: 0;
         }
         .modal-panel-inner .contact-info-col > div {
-          margin-top: 6px;
+          margin-top: 4px;
+        }
+        .modal-panel-inner .contact-tagline {
+          font-size: 13px;
+          line-height: 1.7;
+          margin-bottom: 4px;
+        }
+        .modal-panel-inner .cinfo-list {
+          gap: 16px;
+        }
+        .modal-panel-inner .cinfo {
+          align-items: center;
+          gap: 14px;
+        }
+        .modal-panel-inner .cinfo-icon {
+          width: 40px;
+          height: 40px;
+          border-radius: 12px;
+          font-size: 18px;
+          flex-shrink: 0;
+        }
+        .modal-panel-inner .cinfo-label {
+          font-size: 9px;
+          letter-spacing: 2px;
+        }
+        .modal-panel-inner .cinfo-value {
+          font-size: 13px;
+          margin-top: 2px;
         }
         .modal-panel-inner .contact-form-col {
           padding: var(--s32) var(--s20) var(--s32);
@@ -1838,19 +1865,7 @@
           padding: var(--s32) var(--s20) var(--s32);
           gap: var(--s20);
         }
-        /* Compact cinfo on mobile */
-        .cinfo-icon {
-          width: 34px;
-          height: 34px;
-          font-size: 14px;
-        }
-        .cinfo-value {
-          font-size: 12.5px;
-        }
-        .cinfo-label {
-          font-size: 9px;
-          letter-spacing: 2px;
-        }
+        /* Compact cinfo handled above via .modal-panel-inner */
         /* Stack name/email on mobile too */
         .frow {
           grid-template-columns: 1fr;
